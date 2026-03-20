@@ -591,7 +591,7 @@
       let redirect = params.get('redirect') || '/';
       
       // 防止重定向到登录页本身，避免无限循环
-      if (redirect.includes('login.html') || redirect === '/login') {
+      if (redirect.includes('login.html') || redirect === '/login'data) {
         redirect = '/';
       }
       
